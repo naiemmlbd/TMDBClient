@@ -10,6 +10,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.TMDBClient">
         <activity
+            android:name=".presentation.artist.ArtistActivity"
+            android:exported="true" />
+        <activity
+            android:name=".presentation.tvShow.TvShowActivity"
+            android:exported="true" />
+        <activity
+            android:name=".presentation.movie.MovieActivity"
+            android:exported="true" />
+        <activity
             android:name=".presentation.MainActivity"
             android:exported="true">
             <intent-filter>
