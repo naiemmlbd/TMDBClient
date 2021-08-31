@@ -6,7 +6,9 @@ import android.os.Bundle
 import androidx.databinding.DataBindingUtil
 import com.example.tmdbclient.R
 import com.example.tmdbclient.databinding.ActivityMainBinding
+import com.example.tmdbclient.presentation.artist.ArtistActivity
 import com.example.tmdbclient.presentation.movie.MovieActivity
+import com.example.tmdbclient.presentation.tvShow.TvShowActivity
 
 class MainActivity : AppCompatActivity() {
 
@@ -16,6 +18,15 @@ class MainActivity : AppCompatActivity() {
         binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
         binding.btnMovies.setOnClickListener {
             val intent = Intent(this,MovieActivity::class.java)
+            startActivity(intent)
+        }
+
+        binding.btnArtist.setOnClickListener {
+            val intent = Intent(this,ArtistActivity::class.java)
+            startActivity(intent)
+        }
+        binding.btnTvShows.setOnClickListener {
+            val intent = Intent(this,TvShowActivity::class.java)
             startActivity(intent)
         }
 
