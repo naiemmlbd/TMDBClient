@@ -1,9 +1,7 @@
-package com.example.tmdbclient.data.repository.tvShow.dataSourceImpl
+package com.example.tmdbclient.data.repository.artist.dataSourceImpl
 
 import com.example.tmdbclient.data.db.ArtistDao
-import com.example.tmdbclient.data.db.TvShowDao
 import com.example.tmdbclient.data.model.artist.Artist
-import com.example.tmdbclient.data.model.tvshow.TvShow
 import com.example.tmdbclient.data.repository.artist.dataSource.ArtistLocalDataSource
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
