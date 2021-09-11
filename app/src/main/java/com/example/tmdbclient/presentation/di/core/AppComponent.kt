@@ -1,7 +1,8 @@
+package com.example.tmdbclient.presentation.di.core
 
-
-import com.anushka.tmdbclient.presentation.di.artist.ArtistSubComponent
-import com.example.tmdbclient.presentation.di.*
+import ArtistSubComponent
+import MovieSubComponent
+import TvShowSubComponent
 import dagger.Component
 import javax.inject.Singleton
 
@@ -18,8 +19,8 @@ CacheDataModule::class
 ])
 interface AppComponent {
 
-fun movieSubComponent():MovieSubComponent.Factory
-fun tvShowSubComponent():TvShowSubComponent.Factory
+fun movieSubComponent(): MovieSubComponent.Factory
+fun tvShowSubComponent(): TvShowSubComponent.Factory
 fun artistSubComponent(): ArtistSubComponent.Factory
 
 }
