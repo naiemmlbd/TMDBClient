@@ -1,4 +1,4 @@
-
+package com.example.tmdbclient.presentation.di.artist
 import javax.inject.Scope
 
 @Scope

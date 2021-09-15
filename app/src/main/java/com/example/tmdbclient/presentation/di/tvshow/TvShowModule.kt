@@ -1,4 +1,4 @@
-
+package com.example.tmdbclient.presentation.di.tvshow
 
 import com.example.tmdbclient.domain.usecase.GetTvShowsUseCase
 import com.example.tmdbclient.domain.usecase.UpdateTvShowsUseCase

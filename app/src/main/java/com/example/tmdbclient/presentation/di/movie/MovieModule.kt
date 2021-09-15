@@ -1,4 +1,4 @@
-
+package com.example.tmdbclient.presentation.di.movie
 
 import com.example.tmdbclient.domain.usecase.GetMoviesUseCase
 import com.example.tmdbclient.domain.usecase.UpdateMoviesUseCase

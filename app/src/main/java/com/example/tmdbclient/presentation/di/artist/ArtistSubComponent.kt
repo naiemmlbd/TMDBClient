@@ -1,4 +1,4 @@
-
+package com.example.tmdbclient.presentation.di.artist
 import com.example.tmdbclient.presentation.artist.ArtistActivity
 import dagger.Subcomponent
 
@@ -9,7 +9,7 @@ interface ArtistSubComponent {
 
     @Subcomponent.Factory
     interface Factory{
-        fun create():ArtistSubComponent
+        fun create(): ArtistSubComponent
     }
 
 }

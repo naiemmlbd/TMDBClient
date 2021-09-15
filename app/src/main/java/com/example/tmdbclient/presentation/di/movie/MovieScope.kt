@@ -1,4 +1,4 @@
-
+package com.example.tmdbclient.presentation.di.movie
 import javax.inject.Scope
 
 @Scope

@@ -15,19 +15,19 @@ class CacheDataModule {
 
     @Singleton
     @Provides
-    suspend fun provideMovieCacheDataSource(): MovieCacheDataSource{
+    fun provideMovieCacheDataSource(): MovieCacheDataSource{
         return MovieCacheDatSourceImpl()
     }
 
     @Singleton
     @Provides
-    suspend fun provideArtistCacheDataSource(): ArtistCacheDataSource{
+    fun provideArtistCacheDataSource(): ArtistCacheDataSource{
         return ArtistCacheDatSourceImpl()
     }
 
     @Singleton
     @Provides
-    suspend fun provideTvShowCacheDataSource(): TvShowCacheDataSource{
+    fun provideTvShowCacheDataSource(): TvShowCacheDataSource{
         return TvShowCacheDatSourceImpl()
     }
 }

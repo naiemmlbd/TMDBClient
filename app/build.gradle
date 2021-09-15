@@ -18,6 +18,9 @@ android {
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
 
         buildConfigField "String","API_KEY","\"1dabf84fa36d00912a6bede634e23ca8\""
+        buildConfigField "String","BASE_URL","\"https://api.themoviedb.org/3/\""
+
+
     }
 
     buildTypes {
@@ -75,8 +78,12 @@ dependencies {
     implementation("com.squareup.okhttp3:logging-interceptor:4.9.1")
 
     implementation 'com.google.dagger:dagger:2.38.1'
+    implementation "com.google.dagger:dagger-android:2.38.1"
+    implementation "com.google.dagger:dagger-android-support:2.38.1"
     kapt 'com.google.dagger:dagger-compiler:2.38.1'
     kapt 'com.google.dagger:dagger-android-processor:2.38.1'
+    kapt  "com.google.dagger:dagger-android-support:2.12"
+
 
     implementation 'com.github.bumptech.glide:glide:4.12.0'
     kapt 'com.github.bumptech.glide:compiler:4.12.0'

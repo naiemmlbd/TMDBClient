@@ -1,7 +1,5 @@
+package com.example.tmdbclient.presentation.di.movie
 
-
-import com.anushka.tmdbclient.presentation.di.movie.MovieModule
-import com.anushka.tmdbclient.presentation.di.movie.MovieScope
 import com.example.tmdbclient.presentation.movie.MovieActivity
 import dagger.Subcomponent
 
@@ -12,7 +10,7 @@ interface MovieSubComponent {
 
     @Subcomponent.Factory
     interface Factory{
-        fun create():MovieSubComponent
+        fun create(): MovieSubComponent
     }
 
 }
